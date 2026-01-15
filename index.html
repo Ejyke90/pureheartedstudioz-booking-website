@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureHeartedStudio - Premium Hair Care & Styling</title>
+    <meta name="description"
+        content="PureHeartedStudio offers premium hair care services including retwist locs, box braids, knotless braids, and more. Expert styling for natural hair.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // Initialize EmailJS with your public key
+            const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with actual EmailJS Public Key
+            if (publicKey !== 'YOUR_PUBLIC_KEY') {
+                emailjs.init(publicKey);
+            } else {
+                console.warn('EmailJS not configured - MVP mode active');
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>PureHeartedStudio</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#booking" class="nav-link">Booking</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">Where Beauty Meets Artistry</h2>
+            <p class="hero-subtitle">Premium Natural Hair Care & Styling</p>
+            <a href="#booking" class="cta-button">Book Your Appointment</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Expert care for your natural hair journey</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="retwist_locs.jpg" alt="Loc Retwist Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Loc Retwist</h3>
+                        <p>Professional loc maintenance with precision retwisting for healthy, well-defined locs.</p>
+                        <button class="select-service-btn" data-service="retwist">Select</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="box_braids.jpg" alt="Single Braids Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Single Braids</h3>
+                        <p>Classic box braids styled to perfection with clean parts and long-lasting results.</p>
+                        <button class="select-service-btn" data-service="box_braids">Select</button>
+                    </div>
+                </div>
+
+
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="starter_locs.jpg" alt="Starter Locs Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Starter Locs</h3>
+                        <p>Begin your loc journey with expert guidance and professional installation.</p>
+                        <button class="select-service-btn" data-service="starter">Select</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="cornrows.jpg" alt="Cornrows with Design Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Cornrows with Design</h3>
+                        <p>Intricate cornrow designs and patterns tailored to your unique style.</p>
+                        <button class="select-service-btn" data-service="cornrows">Select</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="straight_back.jpg" alt="Straight Back Cornrows Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Straight Back Cornrows</h3>
+                        <p>Classic straight back braids with clean lines for a timeless, sleek look.</p>
+                        <button class="select-service-btn" data-service="straight_back">Select</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="twists.jpg" alt="Twists Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Twists</h3>
+                        <p>Beautiful two-strand twists with precise parts for a stylish protective look.</p>
+                        <button class="select-service-btn" data-service="twist">Select</button>
+                    </div>
+                </div>
+
+                <div class="service-card long-braids-card">
+                    <div class="service-image">
+                        <img src="long_braids.jpg" alt="Long Braids Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Long Braids</h3>
+                        <p>Stunning long braids that turn heads. Perfect for those who love length and versatility.</p>
+                        <button class="select-service-btn" data-service="long_braids">Select</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="medium_braids.jpg" alt="Medium Braids Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Medium Braids</h3>
+                        <p>The perfect balance of length and style. Easy to manage and beautiful to wear.</p>
+                        <button class="select-service-btn" data-service="medium_braids">Select</button>
+                    </div>
+                </div>
+
+                <div class="service-card short-braids-card">
+                    <div class="service-image">
+                        <img src="short_braids.jpg" alt="Short Braids Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Short Braids</h3>
+                        <p>Chic and manageable short braids. A stylish, low-maintenance option full of personality.</p>
+                        <button class="select-service-btn" data-service="short_braids">Select</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image consultation-card">
+                        <img src="hair_consultation.jpg" alt="Hair Consultation Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Hair Consultation</h3>
+                        <p>Personalized consultation to determine the best styles and care for your hair.</p>
+                        <button class="select-service-btn" data-service="consultation">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Your Hairstylist Section -->
+    <section id="stylist" class="meet-stylist">
+        <div class="container">
+            <div class="stylist-wrapper">
+                <!-- Left Side - Image -->
+                <div class="stylist-left">
+                    <div class="stylist-image-container">
+                        <img src="stylist_photo.jpg" alt="Meet Your Hairstylist" class="stylist-main-image">
+                    </div>
+                </div>
+
+                <!-- Right Side - About Text -->
+                <div class="stylist-right">
+                    <h2 class="stylist-heading">
+                        <span class="heading-light">MEET YOUR</span>
+                        <span class="heading-bold">HAIRSTYLIST</span>
+                    </h2>
+                    <p class="stylist-bio">
+                        Hi, I'm Zaykiyah! With over a decade of self-taught expertise, I specialize in
+                        nurturing natural hair, locs, and protective styles that truly care for your crown.
+                        My passion lies in crafting beautiful looks while prioritizing the health and vitality
+                        of your hair. Every product and technique I use is chosen to promote lasting wellness,
+                        so you can feel confident and supported throughout your hair journey. Can't wait to meet you!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price List Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="price-title">Price List</h2>
+                <p>Quality service at transparent prices</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- LOCS Category -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3>LOCS</h3>
+                    </div>
+                    <div class="pricing-card-body">
+                        <div class="price-item">
+                            <span class="service-name">Short</span>
+                            <span class="price-dots"></span>
+                            <span class="price">$70</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="service-name">Medium</span>
+                            <span class="price-dots"></span>
+                            <span class="price">$80</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="service-name">Long</span>
+                            <span class="price-dots"></span>
+                            <span class="price">$90</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="service-name">Style</span>
+                            <span class="price-dots"></span>
+                            <span class="price">$10+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MENS BRAIDS Category -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3>MENS BRAIDS</h3>
+                    </div>
+                    <div class="pricing-card-body">
+                        <div class="price-item">
+                            <span class="service-name">Twist</span>
+                            <span class="price-dots"></span>
+                            <span class="price">$70</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="service-name">Cornrow Straight Backs</span>
+                            <span class="price-dots"></span>
+                            <span class="price">$16+</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="service-name">Cornrow with Design</span>
+                            <span class="price-dots"></span>
+                            <span class="price">$16+</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="service-name">Single Braids</span>
+                            <span class="price-dots"></span>
+                            <span class="price">$70+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WOMENS BRAIDS Category -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3>WOMENS BRAIDS</h3>
+                    </div>
+                    <div class="pricing-card-body">
+                        <div class="price-item">
+                            <span class="service-name">Long Braids</span>
+                            <span class="price-dots"></span>
+                            <span class="price">$140+</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="service-name">Medium Braids</span>
+                            <span class="price-dots"></span>
+                            <span class="price">$120+</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="service-name">Short Braids</span>
+                            <span class="price-dots"></span>
+                            <span class="price">$100+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Calendar Section -->
+    <section id="booking" class="booking-calendar">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book Your Appointment</h2>
+                <p>Select a date to check availability</p>
+            </div>
+
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button class="calendar-nav prev" aria-label="Previous month">‹</button>
+                    <h3 class="calendar-month">Loading...</h3>
+                    <button class="calendar-nav next" aria-label="Next month">›</button>
+                </div>
+
+                <div class="calendar-grid">
+                    <div class="calendar-day-name">S</div>
+                    <div class="calendar-day-name">M</div>
+                    <div class="calendar-day-name">T</div>
+                    <div class="calendar-day-name">W</div>
+                    <div class="calendar-day-name">T</div>
+                    <div class="calendar-day-name">F</div>
+                    <div class="calendar-day-name">S</div>
+                    <!-- Calendar days will be generated dynamically -->
+                </div>
+
+                <div class="calendar-legend">
+                    <div class="legend-item">
+                        <span class="legend-dot available-dot"></span>
+                        <span>Available</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot unavailable-dot"></span>
+                        <span>Unavailable</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot selected-dot"></span>
+                        <span>Selected</span>
+                    </div>
+                </div>
+
+                <div class="booking-note">
+                    <p><strong>Note:</strong> Past dates are automatically unavailable.</p>
+                    <p>Select a date to book your appointment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Confirmation Section -->
+    <section class="appointment-confirmation">
+        <div class="container">
+            <div class="confirmation-wrapper">
+                <!-- Left decorative image -->
+                <div class="confirmation-side-image left">
+                    <img src="cornrows.jpg" alt="Cornrows hairstyle">
+                </div>
+
+                <!-- Center content -->
+                <div class="confirmation-content">
+                    <div class="confirmation-header">
+                        <div class="header-line"></div>
+                        <h2>APPOINTMENT CONFIRMATION</h2>
+                        <div class="header-line"></div>
+                    </div>
+
+                    <div class="confirmation-text">
+                        <p class="confirmation-main">
+                            You will receive a confirmation email upon booking your appointment.
+                        </p>
+                        <p class="confirmation-reminder">
+                            Email & text reminders, that include address details, will be sent 48 hours before your
+                            appointment.
+                        </p>
+                    </div>
+
+                    <div class="confirmation-icons">
+                        <div class="icon-group">
+                            <div class="icon-circle">
+                                <span class="email-icon">✉</span>
+                            </div>
+                            <div class="icon-circle phone-icon-circle">
+                                <span class="phone-icon">📱</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right decorative image -->
+                <div class="confirmation-side-image right">
+                    <img src="retwist_locs.jpg" alt="Locs hairstyle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to transform your hair? Contact us to book your appointment</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+14164297564">(416) 429-7564</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@pureheartedstudioz.com">info@pureheartedstudioz.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>25 MUTUAL STREET, TORONTO ONTARIO</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/pureheartedstudioz" target="_blank"
+                            class="social-link instagram">
+                            <span>Instagram</span>
+                        </a>
+
+                        <a href="https://tiktok.com/@pureheartedstudioz" target="_blank" class="social-link tiktok">
+                            <span>TikTok</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 PureHeartedStudio. All rights reserved.</p>
+            <p>Premium Natural Hair Care & Styling</p>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Complete Your Booking</h2>
+                <p>Selected Date: <span id="selectedDateDisplay"></span></p>
+            </div>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="retwist">Loc Retwist</option>
+                        <option value="box_braids">Single Braids</option>
+
+                        <option value="starter">Starter Locs</option>
+                        <option value="cornrows">Cornrows with Design</option>
+                        <option value="straight_back">Straight Back Cornrows</option>
+                        <option value="twist">Twists</option>
+                        <option value="long_braids">Long Braids</option>
+                        <option value="medium_braids">Medium Braids</option>
+                        <option value="short_braids">Short Braids</option>
+                        <option value="consultation">Hair Consultation</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
